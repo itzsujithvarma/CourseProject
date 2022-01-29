@@ -9,10 +9,7 @@ export class HeaderComponent implements OnInit {
   collapsed = true;
   constructor() { }
 
-  @Output() selectedFeature = new EventEmitter<string>();
   ngOnInit(): void {
   }
-  onSelected(feature: string){
-    this.selectedFeature.emit(feature);
-  }
+  
 }

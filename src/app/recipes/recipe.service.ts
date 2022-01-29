@@ -15,7 +15,7 @@ export class RecipeService{
             new Ingredient("Cream",3)
         ]),
       ];
-   recipeSelected = new EventEmitter<Recipe>();
+
     public getRecipes(){
         return this.recipes.slice();
     }
@@ -25,5 +25,9 @@ export class RecipeService{
     }
     public addIngredients(ingredients: Ingredient[]){
         this.slService.addItems(ingredients);
+    }
+
+    public getRecipe(index: number){
+        return this.recipes[index];
     }
 }
