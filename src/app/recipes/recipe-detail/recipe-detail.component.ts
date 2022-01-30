@@ -24,4 +24,8 @@ export class RecipeDetailComponent implements OnInit {
     this.recipeService.addIngredients(this.recipe.ingredients);
   }
 
+  public deleteItem(){
+    this.recipeService.deleteRecipe(this.id);
+  }
+
 }
